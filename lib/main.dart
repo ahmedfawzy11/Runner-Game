@@ -194,7 +194,8 @@ class _MyGameState extends State<MyGame> {
   void detectCollision() {
     for (int i = 0; i < zombieList.length; i++) {
       if ((playerX - zombieList[i].zombieX).abs() < 0.05) {
-        // this if condition meaning that the player is not jumping over
+        // This If Condition Meaning That The Player is Not Jumping Over
+
         if (playerHeight > 0.6) {
           backgroundTimer.cancel();
           playerTimer.cancel();
